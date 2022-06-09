@@ -10,6 +10,8 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-back-color: #ffffff;
+  --button-menu-color: #f5f4fa;
+  --footer-color: #2f303a;
 }
 
 body {
@@ -104,13 +106,15 @@ button:focus {
 /* section-hero */
 .hero-title {
   color: var(--primary-back-color);
-  background-color: #2f303a;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
+}
+.hero {
+  background-color: var(--footer-color);
 }
 
 /* features & portfolio */
@@ -124,12 +128,10 @@ button:focus {
   line-height: 1.2;
 }
 
-/* works */
-
 /* team */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--button-menu-color);
 }
 .team .title {
   color: var(--title-text-color);
@@ -137,7 +139,7 @@ button:focus {
 
 /* footer */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-color);
 }
 .logo-footer {
   color: var(--primary-back-color);
@@ -170,15 +172,21 @@ button:focus {
 
 .port .button-alt {
   color: var(--title-text-color);
-  background-color: #f5f4fa;
-  cursor: pointer;
+  background-color: var(--button-menu-color);
   border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
   font-family: inherit;
-  font-weight: 700;
 }
 
 .port .button-alt:hover,
 .port .button-alt:focus {
   color: var(--primary-back-color);
   background-color: var(--accent-color);
+}
+
+.works .link {
+  text-decoration: none;
 }
